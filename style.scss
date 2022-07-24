@@ -11,20 +11,20 @@ body {
     font-family: Inter, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
-    
-}
-@media(min-width: 500px) { body { display:grid; } }
+    @media(min-width: 500px) { display:grid; } }
+
 
 .container {
     background: #7622b7a2;
     padding: 1rem;
     font-size: clamp(1rem, 2vw, 2rem);
     line-height: 1.5em;
+    @media(min-width: 300px)  { margin: 2vh; padding: 2rem; border-radius: 2rem;}
+    @media(min-width: 500px)  { margin: 7vw; padding: 3rem;} 
+    @media(min-width: 1916px)  { margin: 1vw; padding: 0rem; line-height: 2;} 
 }
 
-@media(min-width: 300px) { .container { margin: 2vh; padding: 2rem; border-radius: 2rem;} }
-@media(min-width: 500px) { .container { margin: 7vw; padding: 3rem;} }
-@media(min-width: 1916px) { .container { margin: 1vw; padding: 0rem; line-height: 2;} }
+
 
 
 
@@ -35,10 +35,11 @@ header { }
         height: auto;
         margin: 0 lem lem 0 0;
         border-radius: 50%;
+    
+        @media(min-width: 380px)  { float: left; } 
+        @media(min-width: 930px)  { width: clamp(130px, 14vw, 12rem); } 
     }
 
-    @media(min-width: 380px) { .avatar { float: left; } }
-    @media(min-width: 930px) { .avatar { width: clamp(130px, 14vw, 12rem); } }
     
     .titlulPaginii {
         display: block;
@@ -48,8 +49,8 @@ header { }
     .descrierePrincipala {
         display: block;
         margin: 0.5em 0 0;
+        @media(min-width: 500px)  { margin-bottom: 0.5em;}
     }
-    @media(min-width: 500px) { .descrierePrincipala { margin-bottom: 0.5em;} }
 
 main { clear: both; }
     .listaLinkuri { display: block; margin: 0; padding: 0; border-top: 1px solid #fff;}
@@ -61,3 +62,5 @@ main { clear: both; }
     .listaText { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;  }
     
     @media(min-width: 1800px) { .listaLinkuri { display: grid; grid-template-columns: 1fr 1fr; } }
+
+    /* min 1:21:50 */
