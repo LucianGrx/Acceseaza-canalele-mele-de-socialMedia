@@ -52,15 +52,15 @@ header { }
         @media(min-width: 500px)  { margin-bottom: 0.5em;}
     }
 
-main { clear: both; }
-    .listaLinkuri { display: block; margin: 0; padding: 0; border-top: 1px solid #fff;}
-    .listaItem { display: block; margin: 0; padding: 0; border-bottom:
-        1px solid #fff; }
-    .listaLink { display: block; padding:  0.5em; color: #fff; text-decoration: none; }
-    .listaLink:hover {background: white; color: black; }
-    .listaTitlu { display: block; margin: 0; padding: 0; font-size: 1em; line-height: 1.5em; }
-    .listaText { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;  }
-    
-    @media(min-width: 1800px) { .listaLinkuri { display: grid; grid-template-columns: 1fr 1fr; } }
-
-    /* min 1:21:50 */
+    main { clear: both; }
+        .listaLinkuri { display: block; margin: 0; padding: 0; border-top: 1px solid #fff;
+            @media(min-width: 1800px) { display: grid; grid-template-columns: 1fr 1fr; }
+        }
+        .listaItem { display: block; margin: 0; padding: 0; border-bottom: 1px solid #fff; }
+        .listaLink { display: block; padding:  0.5em; color: #fff; text-decoration: none;
+            &:hover {background: white; color: black; }   
+        }
+        .listaTitlu { display: block; margin: 0; padding: 0; font-size: 1em; line-height: 1.5em; }
+        .listaText { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;  }
+        
+/* 1:38:09 */
